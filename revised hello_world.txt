@@ -1,0 +1,75 @@
+C:\Users\kazuk\git_tutorial>mkdir git_challenge
+
+C:\Users\kazuk\git_tutorial>cd git_challenge
+
+C:\Users\kazuk\git_tutorial\git_challenge>git init
+Initialized empty Git repository in C:/Users/kazuk/git_tutorial/git_challenge/.git/
+
+
+C:\Users\kazuk\git_tutorial\git_challenge>echo "Hello, world!" > hello_world.txt
+
+C:\Users\kazuk\git_tutorial\git_challenge>git add hello_world.txt
+
+C:\Users\kazuk\git_tutorial\git_challenge>git commit -m "Add hello_world.txt"
+[main (root-commit) 1515c2a] Add hello_world.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+
+C:\Users\kazuk\git_tutorial\git_challenge>echo "Hello, world!" > hello_world.txt
+
+C:\Users\kazuk\git_tutorial\git_challenge>git add hello_world.txt
+
+
+C:\Users\kazuk\git_tutorial\git_challenge>git commit -m "Add 'Hello, world!' to hello_world.txt"
+On branch main
+nothing to commit, working tree clean
+
+
+C:\Users\kazuk\git_tutorial\git_challenge>echo "‚±‚ñ‚É‚¿‚Í¢ŠEI" >> hello_world.txt
+
+C:\Users\kazuk\git_tutorial\git_challenge>git add hello_world.txt
+
+C:\Users\kazuk\git_tutorial\git_challenge>git commit -m "Add '‚±‚ñ‚É‚¿‚Í¢ŠEI' to hello_world.txt"
+[main b647c71] Add '‚±‚ñ‚É‚¿‚Í¢ŠEI' to hello_world.txt
+ 1 file changed, 1 insertion(+)
+
+C:\Users\kazuk\git_tutorial\git_challenge>git log
+commit b647c711fb4ad03aa31634250b9d03d7699b0e0b (HEAD -> main)
+Author: Jazz69VTR <kazukimatayoshi0313@gmail.com>
+Date:   Sat Oct 26 19:19:47 2024 +0900
+
+    Add '‚±‚ñ‚É‚¿‚Í¢ŠEI' to hello_world.txt
+
+commit 1515c2a940dbd82a22887aa7e0ad1be7e78f7794
+Author: Jazz69VTR <kazukimatayoshi0313@gmail.com>
+Date:   Sat Oct 26 19:07:20 2024 +0900
+
+    Add hello_world.txt
+
+
+
+C:\Users\kazuk\git_tutorial\kadai_005>git add .
+
+C:\Users\kazuk\git_tutorial\kadai_005>git commit -m "‰Û‘è‚ğ’Ç‰Á"
+[main (root-commit) b4fdc07] ‰Û‘è‚ğ’Ç‰Á
+ 1 file changed, 2 insertions(+)
+ create mode 100644 hello_world.txt
+
+C:\Users\kazuk\git_tutorial\kadai_005>git remote add origin git@github.com:Jazz69VTR/git-basic-kadai.git
+
+C:\Users\kazuk\git_tutorial\kadai_005>git push -u origin main
+Enter passphrase for key '/c/Users/kazuk/.ssh/id_rsa':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 282 bytes | 282.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Jazz69VTR/git-basic-kadai.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+
+
+
+"Hello, world!" 
+"‚±‚ñ‚É‚¿‚Í¢ŠEI" 
